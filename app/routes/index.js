@@ -8,5 +8,8 @@ export default Ember.Route.extend({
     committeeLookup(params){
       this.transitionTo('search', params.query);
     },
+    billLookup(params){
+      this.transitionTo('search', params.query);
+    },
   }
 });
