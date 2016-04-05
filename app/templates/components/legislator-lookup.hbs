@@ -1,0 +1,12 @@
+<h1>Legislator Lookup</h1>
+
+{{#if isSelected}}
+  <form {{action 'submitForm' on="submit"}}>
+    <label for="zipcode">Enter ZIP</label>
+    {{input value=zipcode}}
+    <button type="submit" name="button">Submit</button>
+    <button type="button" {{action 'showForm'}}>Undo</button>
+  </form>
+{{else}}
+  <button type="button" {{action 'showForm'}}>Look For A Legislator</button>
+{{/if}}
