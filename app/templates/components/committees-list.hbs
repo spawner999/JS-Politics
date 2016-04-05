@@ -1,3 +1,7 @@
 {{#each committees as |committee|}}
+{{#if isLink}}
+{{committee-link-tile committee=committee}}
+{{else}}
 {{committee-tile committee=committee}}
+{{/if}}
 {{/each}}

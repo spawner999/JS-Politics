@@ -1,0 +1,11 @@
+<hr>
+<h2>
+  {{model.committee.[0].name}}
+</h2>
+<h3>
+  Chamber: {{model.committee.[0].chamber}}
+</h3>
+{{#if model.subs}}
+{{sub-list subs=model.subs}}
+{{else}}
+{{/if}}
