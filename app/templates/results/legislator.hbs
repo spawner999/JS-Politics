@@ -1,3 +1,5 @@
-<h3>{{model.[0].first_name}} {{model.[0].last_name}}</h3>
-<p>Office Adress: {{model.[0].office}}</p>
-<p>Contact email: {{model.[0].oc_email}}</p>
+<h3>{{log model}} {{model.legislator.[0].last_name}}</h3>
+<p>Office Adress: {{model.legislator.[0].office}}</p>
+<p>Contact email: {{model.legislator.[0].oc_email}}</p>
+<h3>Committees</h3>
+{{committees-list committees=model.committees}}

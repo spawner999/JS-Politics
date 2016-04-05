@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('results', {path: '/results/:zip'}, function() {
-    this.route('legislator', {path: '/legislator/:last_name/:first_name'});
+    this.route('legislator', {path: '/legislator/:bioguide_id'});
   });
 });
 
